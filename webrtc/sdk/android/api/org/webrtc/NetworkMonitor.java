@@ -14,6 +14,7 @@ import static org.webrtc.NetworkMonitorAutoDetect.ConnectionType;
 import static org.webrtc.NetworkMonitorAutoDetect.INVALID_NET_ID;
 import static org.webrtc.NetworkMonitorAutoDetect.NetworkInformation;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
 
@@ -37,6 +38,8 @@ public class NetworkMonitor {
   }
 
   private static final String TAG = "NetworkMonitor";
+
+  @SuppressLint("StaticFieldLeak")
   private static NetworkMonitor instance;
 
   private final Context applicationContext;

@@ -12,6 +12,7 @@ package org.webrtc.voiceengine;
 
 import org.webrtc.Logging;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -129,6 +130,7 @@ public final class WebRtcAudioUtils {
     return Arrays.asList(WebRtcAudioUtils.BLACKLISTED_NS_MODELS);
   }
 
+  @SuppressLint("ObsoleteSdkInt")
   public static boolean runningOnGingerBreadOrHigher() {
     // November 2010: Android 2.3, API Level 9.
     return Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD;

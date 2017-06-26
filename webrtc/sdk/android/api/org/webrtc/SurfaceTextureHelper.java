@@ -10,6 +10,7 @@
 
 package org.webrtc;
 
+import android.annotation.SuppressLint;
 import android.graphics.SurfaceTexture;
 import android.opengl.GLES11Ext;
 import android.opengl.GLES20;
@@ -245,6 +246,7 @@ public class SurfaceTextureHelper {
     }
   }
 
+  @SuppressLint("ObsoleteSdkInt")
   private void tryDeliverTextureFrame() {
     if (handler.getLooper().getThread() != Thread.currentThread()) {
       throw new IllegalStateException("Wrong thread.");

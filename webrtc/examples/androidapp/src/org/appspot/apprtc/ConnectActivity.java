@@ -223,7 +223,7 @@ public class ConnectActivity extends Activity {
     SharedPreferences.Editor editor = sharedPref.edit();
     editor.putString(keyprefRoom, room);
     editor.putString(keyprefRoomList, roomListJson);
-    editor.commit();
+    editor.apply();
   }
 
   @Override

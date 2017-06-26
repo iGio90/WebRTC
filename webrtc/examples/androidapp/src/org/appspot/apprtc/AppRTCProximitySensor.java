@@ -12,6 +12,7 @@ package org.appspot.apprtc;
 
 import org.appspot.apprtc.util.AppRTCUtils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -139,6 +140,7 @@ public class AppRTCProximitySensor implements SensorEventListener {
   }
 
   /** Helper method for logging information about the proximity sensor. */
+  @SuppressLint("ObsoleteSdkInt")
   private void logProximitySensorInfo() {
     if (proximitySensor == null) {
       return;

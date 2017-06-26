@@ -43,6 +43,10 @@
 /ios
 /mojo
 /out
+/out_android_arm
+/out_android_arm64
+/out_android_x64
+/out_android_x86
 /testing
 /third_party
 /tools

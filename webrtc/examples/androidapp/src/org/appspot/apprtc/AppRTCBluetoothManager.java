@@ -12,6 +12,7 @@ package org.appspot.apprtc;
 
 import org.appspot.apprtc.util.AppRTCUtils;
 
+import android.annotation.SuppressLint;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothHeadset;
@@ -409,6 +410,7 @@ public class AppRTCBluetoothManager {
   }
 
   /** Logs the state of the local Bluetooth adapter. */
+  @SuppressLint("HardwareIds")
   protected void logBluetoothAdapterInfo(BluetoothAdapter localAdapter) {
     Log.d(TAG, "BluetoothAdapter: "
             + "enabled=" + localAdapter.isEnabled() + ", "
